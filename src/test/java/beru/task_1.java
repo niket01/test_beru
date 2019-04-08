@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class task_1 {
     @Test
-    public void execute_login(){
+    public void execute_task1(){
         chrome.set_driver();
         chrome.get_beru();
         //убрать рекламный банер
