@@ -13,6 +13,6 @@ public class task_1 {
         //вход на сайт
         Account.login();
         chrome.driver.get("https://beru.ru/logout?retpath=https%3A%2F%2Fberu.ru%2F%3Fncrnd%3D3082%26loggedin%3D1");
-        chrome.driver.close();
+        chrome.stop();
     }
 }
