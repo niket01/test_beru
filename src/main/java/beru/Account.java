@@ -7,7 +7,7 @@ import org.testng.Assert;
 public class Account {
     public static void login(){
         //вход в аккаунт
-        chrome.driver.findElement(By.xpath("//span[@title='Войти в аккаунт']")).click();
+        /*chrome.driver.findElement(By.xpath("//span[@title='Войти в аккаунт']")).click();
         chrome.driver.findElement(By.name("login")).sendKeys("nikita.yadchuk");
         chrome.driver.findElement(By.cssSelector("button.control.button2.button2_view_classic.button2_size_l." +
                 "button2_theme_action.button2_width_max.button2_type_submit.passp-form-button")).click();
@@ -25,9 +25,9 @@ public class Account {
             chrome.driver.findElement(By.cssSelector("button.control.button2.button2_view_classic.button2_" +
                     "size_l.button2_theme_normal.button2_width_max.passp-form-button")).click();
         }
-        finally{
+        finally {
             Assert.assertEquals(chrome.driver.findElement(By.cssSelector("span.header2-nav-item__icon." +
                             "header2-nav-item__icon_type_profile")).getAttribute("title"),"Мой профиль");
-        }
+        }*/
     }
 }

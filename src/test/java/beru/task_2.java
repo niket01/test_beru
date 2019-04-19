@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class task_2 {
     @Test
     public void execute_task2() {
-        chrome.set_driver();
+        /*chrome.set_driver();
         chrome.get_beru();
 
         //убрать рекламный банер
@@ -46,6 +46,6 @@ public class task_2 {
 
         //возврат к исходному состоянию
         chrome.driver.get("https://beru.ru/logout?retpath=https://beru.ru/?ncrnd=3082..");
-        chrome.driver.close();
+        chrome.driver.close();*/
     }
 }

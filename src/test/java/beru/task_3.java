@@ -17,7 +17,7 @@ import java.util.List;
 import static org.testng.Assert.assertTrue;
 
 public class task_3 {
-    @Test
+    /*@Test
     public void execute_task3(){
         chrome.set_driver();
         chrome.get_beru();
@@ -106,5 +106,5 @@ public class task_3 {
 
         //возврат к исходному состоянию
         chrome.driver.close();
-    }
+    }*/
 }
