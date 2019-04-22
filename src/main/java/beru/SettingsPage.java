@@ -1,5 +1,6 @@
 package beru;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -11,6 +12,7 @@ public class SettingsPage {
         this.driver = driver;
     }
 
+    @Step
     public void checkRegionAndDeliveryRegion(){
         Assert.assertEquals(driver.findElement(By.xpath("//div[@class='layout layout_type_maya']" +
                 "//span[@class='link__inner']")).getText(), "Хвалынск");

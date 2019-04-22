@@ -22,6 +22,12 @@ public class LoginPage {
         driver.findElement(By.name("passwd")).sendKeys("Relax-22121");
     }
 
+    /*@Step
+    public void skipAdditionalEmail(){
+        driver.findElement(By.cssSelector("button.control.button2.button2_view_classic.button2_size_l." +
+                    "button2_theme_normal.button2_width_max.passp-form-button")).click();
+    }*/
+
     @Step("Click login")
     public void clickLoginButton(){
         driver.findElement(By.cssSelector("button.control.button2.button2_view_classic.button2_size_l.button2_" +

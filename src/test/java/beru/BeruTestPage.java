@@ -1,16 +1,15 @@
 package beru;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class BeruTestPage {
     private ChromeDriver driver;
 
-    @BeforeTest
+    @BeforeMethod
     public void setUp(){
         driver = new ChromeDriver();
         System.setProperty("webdriver.chrome.driver",
@@ -19,7 +18,7 @@ public class BeruTestPage {
         this.driver.get("https://beru.ru/?ncrnd=3198");
     }
 
-    @AfterTest
+    @AfterMethod
     public void tearDown(){
         driver.close();
     }
@@ -63,5 +62,35 @@ public class BeruTestPage {
         //compare region and delivery region
         SettingsPage settings = new SettingsPage(driver);
         settings.checkRegionAndDeliveryRegion();
+    }
+
+    @Test
+    public void testBuyToothbrush(){
+        //go to toothbrushes page in catalog
+        HomePage home = new HomePage(driver);
+        home.clickCatalogButton();
+        home.clickToothbrushInCatalog();
+
+        //go to electric toothbrushes page
+        ToothbrushesPage toothbrush = new ToothbrushesPage(driver);
+        toothbrush.clickElecticToothbrushesButton();
+
+        //enter the price range and check price range
+        ElectricToothbrushesPage electric = new ElectricToothbrushesPage(driver);
+        electric.enterPriceRange();
+        electric.openAllToothbrushes();
+        electric.checkPriceRange();
+
+        //add toothbrush and go to cart
+        electric.addToothbrush();
+        electric.clickCartButton();
+
+        //check free delivery and total price
+        CartPage cart = new CartPage(driver);
+        cart.checkDelivery();
+        int total_price = cart.checkTotalPrice();
+        cart.addItemsForFreeDelivery(total_price);
+        cart.checkFreeDelivery();
+        cart.checkTotalPriceWithFreeDelivery();
     }
 }
