@@ -11,6 +11,8 @@ import org.testng.Assert;
 public class HomePage {
     private WebDriver driver;
 
+    //private By loginButton = By.xpath("//span[@title='Войти в аккаунт']");
+
     public HomePage(WebDriver driver){
         this.driver = driver;
     }
@@ -32,7 +34,7 @@ public class HomePage {
     }
 
     @Step
-    public void clickCityButton(){
+    public void clickRegionButton(){
         driver.findElement(By.xpath("//div[@class='layout layout_type_maya']//span[@class='link__inner']")).click();
     }
 

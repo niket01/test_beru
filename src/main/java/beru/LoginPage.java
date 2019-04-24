@@ -3,7 +3,6 @@ package beru;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class LoginPage {
     private WebDriver driver;
@@ -33,5 +32,10 @@ public class LoginPage {
         driver.findElement(By.cssSelector("button.control.button2.button2_view_classic.button2_size_l.button2_" +
                 "theme_action.button2_width_max.button2_type_submit.passp-form-button")).click();
     }
-
 }
+
+
+
+
+
+

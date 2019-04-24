@@ -3,7 +3,6 @@ package beru;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
-import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class BeruTestPage {
@@ -14,8 +13,8 @@ public class BeruTestPage {
         driver = new ChromeDriver();
         System.setProperty("webdriver.chrome.driver",
                 "C:\\Users\\Nikita\\Documents\\GitHub\\beru_testing\\chromedriver.exe");
-        this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        this.driver.get("https://beru.ru/?ncrnd=3198");
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get("https://beru.ru/?ncrnd=3198");
     }
 
     @AfterMethod
@@ -42,7 +41,7 @@ public class BeruTestPage {
     public void testChangeCity(){
         //change region
         HomePage home = new HomePage(driver);
-        home.clickCityButton();
+        home.clickRegionButton();
         home.enterNewRegion();
         home.choiceRegion();
         home.clickContinueWithNewRegionButton();
@@ -88,8 +87,8 @@ public class BeruTestPage {
         //check free delivery and total price
         CartPage cart = new CartPage(driver);
         cart.checkDelivery();
-        int total_price = cart.checkTotalPrice();
-        cart.addItemsForFreeDelivery(total_price);
+        int totalPrice = cart.checkTotalPrice();
+        cart.addItemsForFreeDelivery(totalPrice);
         cart.checkFreeDelivery();
         cart.checkTotalPriceWithFreeDelivery();
     }

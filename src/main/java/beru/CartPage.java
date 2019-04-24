@@ -23,22 +23,22 @@ public class CartPage {
 
     @Step
     public int checkTotalPrice(){
-        int total_price = Integer.parseInt(driver.findElement(By.cssSelector("span._1oBlNqVHPq")).getText().
+        int totalPrice = Integer.parseInt(driver.findElement(By.cssSelector("span._1oBlNqVHPq")).getText().
                 replaceAll("\\D",""));
-        int total_item = Integer.parseInt(driver.findElement(By.xpath("//div[contains(@data-auto, " +
+        int totalItem = Integer.parseInt(driver.findElement(By.xpath("//div[contains(@data-auto, " +
                 "'total-items')]//span[2]")).getText().replaceAll("\\D",""));
-        int total_delivery = Integer.parseInt(driver.findElement(By.xpath("//div[contains(@data-auto, " +
+        int totalDelivery = Integer.parseInt(driver.findElement(By.xpath("//div[contains(@data-auto, " +
                 "'total-delivery')]//span[2]")).getText().replaceAll("\\D",""));
-        Assert.assertEquals(total_item + total_delivery, total_price);
-        return total_item;
+        Assert.assertEquals(totalItem + totalDelivery, totalPrice);
+        return totalItem;
     }
 
     @Step
-    public void addItemsForFreeDelivery(int total_item){
-        int free_delivery = total_item;
-        while(free_delivery < 2999){
+    public void addItemsForFreeDelivery(int totalItem){
+        int freeDelivery = totalItem;
+        while(freeDelivery <= 2999){
             driver.findElement(By.cssSelector("button._4qhIn2-ESi._2sJs248D-A._18c2gUxCdP._3hWhO4rvmA")).click();
-            free_delivery += total_item;
+            freeDelivery += totalItem;
         }
     }
 
@@ -53,10 +53,10 @@ public class CartPage {
 
     @Step
     public void checkTotalPriceWithFreeDelivery(){
-        int total_price = Integer.parseInt(driver.findElement(By.cssSelector("span._1oBlNqVHPq")).getText().
+        int totalPrice = Integer.parseInt(driver.findElement(By.cssSelector("span._1oBlNqVHPq")).getText().
                 replaceAll("\\D",""));
-        int total_item = Integer.parseInt(driver.findElement(By.xpath("//div[contains(@data-auto, " +
+        int totalItem = Integer.parseInt(driver.findElement(By.xpath("//div[contains(@data-auto, " +
                 "'total-items')]//span[2]")).getText().replaceAll("\\D",""));
-        Assert.assertEquals(total_item, total_price);
+        Assert.assertEquals(totalItem, totalPrice);
     }
 }
