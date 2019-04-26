@@ -13,15 +13,13 @@ public class HomePage {
 
     //private By loginButton = By.xpath("//span[@title='Войти в аккаунт']");
 
-    public HomePage(WebDriver driver){
-        this.driver = driver;
-    }
-
    /* @Step("Close Advertising")
     public void clickCloseAdvertisingButton(){
         driver.findElement(By.cssSelector("div._3BBUsZVSt0._3pvYcLe0Ew"));
     }*/
-
+   public HomePage(WebDriver driver){
+       this.driver = driver;
+   }
     @Step("Click loginButton on HomePage")
     public void clickLoginButton(){
         driver.findElement(By.xpath("//span[@title='Войти в аккаунт']")).click();
