@@ -13,9 +13,9 @@ public class SettingsPage {
     }
 
     @Step
-    public void checkRegionAndDeliveryRegion(){
+    public void checkRegionAndDeliveryRegion(String region){
         Assert.assertEquals(driver.findElement(By.xpath("//div[@class='layout layout_type_maya']" +
-                "//span[@class='link__inner']")).getText(), "Хвалынск");
+                "//span[@class='link__inner']")).getText(), region);
 
         //compare region and delivery region
         Assert.assertTrue(driver.findElement(By.xpath("//div[@class='layout layout_type_maya']//span" +

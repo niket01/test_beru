@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 
 public class HomePage {
     private WebDriver driver;
@@ -17,6 +18,7 @@ public class HomePage {
     public void clickCloseAdvertisingButton(){
         driver.findElement(By.cssSelector("div._3BBUsZVSt0._3pvYcLe0Ew"));
     }*/
+
    public HomePage(WebDriver driver){
        this.driver = driver;
    }
@@ -25,20 +27,20 @@ public class HomePage {
         driver.findElement(By.xpath("//span[@title='Войти в аккаунт']")).click();
     }
 
-    @Step("Check button My Profile")
+    @Step("Check button MyProfile")
     public void checkMyProfile(){
         Assert.assertEquals(driver.findElement(By.cssSelector("span.header2-nav-item__icon.header2-nav-item__icon" +
                 "_type_profile")).getAttribute("title"),"Мой профиль");
     }
 
-    @Step
+    @Step("Click on region button")
     public void clickRegionButton(){
         driver.findElement(By.xpath("//div[@class='layout layout_type_maya']//span[@class='link__inner']")).click();
     }
 
-    @Step
-    public void enterNewRegion(){
-        driver.findElement(By.xpath("//input[@class='input__control']")).sendKeys("хвалынск");
+    @Step("Enter ")
+    public void enterNewRegion(String region){
+        driver.findElement(By.xpath("//input[@class='input__control']")).sendKeys(region);
     }
 
     @Step
@@ -54,11 +56,11 @@ public class HomePage {
     }
 
     @Step
-    public void checkChangeRegion(){
+    public void checkChangeRegion(String region){
         (new WebDriverWait(driver, 15)).until(ExpectedConditions.visibilityOfElementLocated
                 (By.xpath("//div[@class='footer b-zone i-bem']")));
         Assert.assertEquals(driver.findElement(By.xpath("//div[@class='layout layout_type_maya']" +
-                "//span[@class='link__inner']")).getText(), "Хвалынск");
+                "//span[@class='link__inner']")).getText(), region);
     }
 
     @Step

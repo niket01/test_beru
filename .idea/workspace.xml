@@ -2,36 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf6e5c5-3a0b-4eb4-aad2-8c3e087e480f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/beru/EventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/beru/TestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beru/DriverClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/0355b1e2-3188-4872-9e5f-38e1a6ae8bf6-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/0725d890-a522-40e4-a192-8a1dbd97c690-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/12b5e5ce-04c8-4be5-9194-10904bb53e72-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1991ba73-9730-47a3-ad29-2ce3e98fe4cf-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/22599d2f-0958-478f-83e8-743f5b33a9ae-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/280bc5dd-12a5-4ede-a2ae-cc823579714f-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/2d270622-79b0-4a82-a872-f798fa50fffc-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/3acc961a-5ad4-44f1-b39c-9f27505a5ea2-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/44ccd988-fb91-437f-b689-4651a33c4d6f-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4d0cdecf-75e5-4e94-adbf-f6facdfa90f3-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4df2a661-402d-4177-8e7b-5d967f3c5aa0-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5001b841-fafe-492b-b201-06cee85d8daf-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/504c7b4e-986c-419e-9935-d7df6eba644e-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/555fe42f-ad4d-4731-813b-6d0e60447550-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5b35396a-6c82-4627-987b-2fbeba1249bd-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5da2ca52-12a2-45da-a56b-17a41ba798b2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/79ba673d-69b8-4cd4-b2c3-9ec062b319b4-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/7cf405a1-c1be-478f-afbb-777090ba7d2a-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ad075129-778b-4e2c-9247-7ab5eddbcea3-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c88d21a5-49f5-4767-84f9-c8e658b9a01f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ce513152-42f6-4a04-9869-594ad2cc78a5-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d594fd25-0074-4647-843c-a8b11225a6d6-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f5bc1e49-3af0-4ac6-85f0-be92e11ebcc3-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f9868e8b-dba0-489b-b41a-bbba27e9f7bd-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/147770ea-4dde-4753-8db0-c5c2ed07fc3a-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1c01d06e-2bef-49ac-8c2c-019a417b561c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2453923a-664d-441a-ad28-723a88bb3596-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/341c5f23-a768-4802-8c30-48f8ac87ba81-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3a099b73-d5d7-496c-93a0-997f830c0ecc-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/45eb962b-938f-4d61-a586-8b2421861d7f-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/48c27917-bc1b-4275-aaaa-12fb9f36e648-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4a766c6e-3cf4-4837-9e2b-7f136f191cdf-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/53c26371-d83a-400c-8d83-d736bf7db5c7-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/56bd0928-1ce8-44e5-af4f-cadb5313994e-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/647495fd-4fa5-4b97-a06e-7c3310af0fd9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6a9ea1e9-2299-4a0e-92a4-164c2e4a7f33-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6bc9bf70-feae-4c21-8c07-3315cf0c7477-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6edea4db-5674-4862-82d6-1acc53ab9ea0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/756e535b-9769-4019-9db4-794ef6e3074a-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7b7af5bb-8cf8-42a9-9d0d-ca4d2b073580-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7f4f0961-36c4-46e9-ba3d-39c32b253c44-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8257a431-8862-4280-9d06-27000fe639c8-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8a35e9a9-2e98-41c3-950e-666d2407403b-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8c91b5e8-32b2-47b3-9c73-0742dc15aaf5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/946371f5-117c-437b-91d0-a0cbe21f41a0-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a6c6856d-e021-469b-9043-07bd0be65b11-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b61aa08c-f2d4-4697-9168-30e51d30bf3a-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b7b7667b-2178-419b-a4fc-d6caf90947a9-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b7e91b2b-43ca-4714-8e48-6bc07f5f7569-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/be485a67-e93b-4537-9bd6-3476a5a932fc-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c555b06d-73e4-41b3-bf5a-a67095ca2f30-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c6e99d45-c0d9-4b64-91a6-d33f6b2bd373-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/caa3e1fc-2ae4-4ae4-b624-e1a87449cb95-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/cdec9a95-2d47-4cb3-8fb2-fbc0a496b3e9-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/cee669e1-2c7c-40b3-91f1-f363c9ea3387-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/da35dd75-8bfc-43ea-9929-75f5ca0e8a4e-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e51dff43-e5b5-403b-91f2-f37759abbc20-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e8e51498-e70f-4391-9387-d81757ecd3b0-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/eed72055-5924-4e04-948c-4ca20abb69b7-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f6e4cde5-7d24-464a-be93-e849a14157c8-attachment" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/beru/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beru/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beru/SettingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beru/SettingsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/beru/BeruTestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/beru/BeruTestPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/beru/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beru/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/beru/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beru/TestListener.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,10 +60,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/beru/TestListener.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/beru/TestListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="204">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/beru/HomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,22 +86,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/beru/EventListener.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/beru/EventListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/beru/BeruTestPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            <state relative-caret-position="211">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/beru/SettingsPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,70 +110,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beru/HomePage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/beru/DriverClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+            <state relative-caret-position="75">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+                <element signature="e#970#971#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beru/CartPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/beru/BeruTestPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beru/ElectricToothbrushesPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beru/ToothbrushesPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beru/LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="57" column="36" lean-forward="true" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -192,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/test/java/beru/task_1.java" />
         <option value="$PROJECT_DIR$/src/main/java/beru/SettingPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/beru/chrome.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beru/SettingsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/beru/ToothbrushesPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/beru/ElectricToothbrushesPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/beru/CartPage.java" />
@@ -205,8 +185,14 @@
         <option value="$PROJECT_DIR$/src/test/java/beru/TestFailureListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/beru/EventListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/beru/TestListener.java" />
-        <option value="$PROJECT_DIR$/src/test/java/beru/BeruTestPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beru/BeforeMethodClass.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/beru/DriverClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beru/EventListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beru/TestListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/beru/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beru/SettingsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beru/BeruTestPage.java" />
       </list>
     </option>
   </component>
@@ -221,7 +207,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="582" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -318,7 +304,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BeruTestPage">
+  <component name="RunManager" selected="TestNG.C:/Users/Nikita/Documents/GitHub/beru_testing/testng.xml">
     <configuration name="BeruTestPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="beru_testing" />
       <extension name="coverage">
@@ -390,18 +376,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/Nikita/Documents/GitHub/beru_testing/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="beru_testing" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="TestNG.BeruTestPage" />
       <item itemvalue="TestNG.BeruTestPage.testBuyToothbrush" />
       <item itemvalue="TestNG.BeruTestPage.testChangeCity" />
       <item itemvalue="TestNG.BeruTestPage.testLogin" />
+      <item itemvalue="TestNG.C:/Users/Nikita/Documents/GitHub/beru_testing/testng.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Nikita/Documents/GitHub/beru_testing/testng.xml" />
+        <item itemvalue="TestNG.BeruTestPage.testChangeCity" />
         <item itemvalue="TestNG.BeruTestPage" />
         <item itemvalue="TestNG.BeruTestPage.testLogin" />
         <item itemvalue="TestNG.BeruTestPage.testBuyToothbrush" />
-        <item itemvalue="TestNG.BeruTestPage.testChangeCity" />
       </list>
     </recent_temporary>
   </component>
@@ -419,35 +417,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BeruTestPage - 2019.04.25 at 22h 35m 02s.xml">
+    <history-entry file="BeruTestPage - 2019.04.26 at 11h 43m 02s.xml">
       <configuration name="BeruTestPage" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BeruTestPage - 2019.04.25 at 22h 47m 54s.xml">
-      <configuration name="BeruTestPage" configurationId="TestNG" />
+    <history-entry file="BeruTestPage_testChangeCity - 2019.04.26 at 11h 46m 52s.xml">
+      <configuration name="BeruTestPage.testChangeCity" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BeruTestPage - 2019.04.25 at 23h 08m 23s.xml">
-      <configuration name="BeruTestPage" configurationId="TestNG" />
+    <history-entry file="C__Users_Nikita_Documents_GitHub_beru_testing_testng_xml - 2019.04.26 at 11h 51m 20s.xml">
+      <configuration name="C:/Users/Nikita/Documents/GitHub/beru_testing/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BeruTestPage - 2019.04.26 at 00h 16m 49s.xml">
-      <configuration name="BeruTestPage" configurationId="TestNG" />
+    <history-entry file="C__Users_Nikita_Documents_GitHub_beru_testing_testng_xml - 2019.04.26 at 11h 54m 11s.xml">
+      <configuration name="C:/Users/Nikita/Documents/GitHub/beru_testing/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BeruTestPage - 2019.04.26 at 01h 22m 00s.xml">
-      <configuration name="BeruTestPage" configurationId="TestNG" />
+    <history-entry file="C__Users_Nikita_Documents_GitHub_beru_testing_testng_xml - 2019.04.26 at 11h 55m 55s.xml">
+      <configuration name="C:/Users/Nikita/Documents/GitHub/beru_testing/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BeruTestPage - 2019.04.26 at 01h 30m 27s.xml">
-      <configuration name="BeruTestPage" configurationId="TestNG" />
+    <history-entry file="BeruTestPage_testChangeCity - 2019.04.26 at 11h 56m 27s.xml">
+      <configuration name="BeruTestPage.testChangeCity" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BeruTestPage - 2019.04.26 at 02h 01m 16s.xml">
-      <configuration name="BeruTestPage" configurationId="TestNG" />
+    <history-entry file="BeruTestPage_testChangeCity - 2019.04.26 at 11h 56m 43s.xml">
+      <configuration name="BeruTestPage.testChangeCity" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BeruTestPage - 2019.04.26 at 02h 04m 06s.xml">
-      <configuration name="BeruTestPage" configurationId="TestNG" />
+    <history-entry file="C__Users_Nikita_Documents_GitHub_beru_testing_testng_xml - 2019.04.26 at 11h 57m 36s.xml">
+      <configuration name="C:/Users/Nikita/Documents/GitHub/beru_testing/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BeruTestPage - 2019.04.26 at 02h 23m 44s.xml">
-      <configuration name="BeruTestPage" configurationId="TestNG" />
+    <history-entry file="C__Users_Nikita_Documents_GitHub_beru_testing_testng_xml - 2019.04.26 at 12h 00m 29s.xml">
+      <configuration name="C:/Users/Nikita/Documents/GitHub/beru_testing/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BeruTestPage - 2019.04.26 at 10h 08m 08s.xml">
-      <configuration name="BeruTestPage" configurationId="TestNG" />
+    <history-entry file="C__Users_Nikita_Documents_GitHub_beru_testing_testng_xml - 2019.04.26 at 12h 06m 03s.xml">
+      <configuration name="C:/Users/Nikita/Documents/GitHub/beru_testing/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -461,6 +459,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="1" />
@@ -468,10 +467,10 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.24886535" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2526475" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4969743" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -561,16 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunnerWorker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#2034#2035#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -612,16 +601,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/beru/task_2.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/beru/CustomTestListener.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/beru/TestEventListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/beru/SettingsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/beru/ElectricToothbrushesPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -632,9 +611,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunnerWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#2120#2121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beru/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/beru/ToothbrushesPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="194">
           <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -642,40 +648,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beru/LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beru/CartPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="-12">
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/beru/TestListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beru/EventListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/beru/BeruTestPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/beru/EventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="211">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -684,28 +670,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/beru/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+        <state relative-caret-position="177">
+          <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beru/DriverClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        <state relative-caret-position="75">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beru/CartPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beru/SettingsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        <state relative-caret-position="119">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beru/TestListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/beru/BeruTestPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="57" column="36" lean-forward="true" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
         </state>
       </provider>
     </entry>
