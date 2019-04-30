@@ -9,11 +9,11 @@ import org.testng.TestListenerAdapter;
 public class TestListener extends TestListenerAdapter {
     @Override
     public void onTestFailure(ITestResult result){
-        saveScreenShot(result);
+        saveScreenShot();
     }
 
     @Attachment(value = "Page screenshot", type = "image/png")
-    private byte[] saveScreenShot(ITestResult result){
+    private byte[] saveScreenShot(){
         return ((TakesScreenshot) DriverClass.getDriver()).getScreenshotAs(OutputType.BYTES);
     }
 }

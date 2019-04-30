@@ -12,14 +12,14 @@ public class SettingsPage {
         this.driver = driver;
     }
 
-    @Step
+    private By regionButton = By.xpath("//div[@class='layout layout_type_maya']//span[@class='link__inner']");
+
+    @Step("Check region and delivery region")
     public void checkRegionAndDeliveryRegion(String region){
-        Assert.assertEquals(driver.findElement(By.xpath("//div[@class='layout layout_type_maya']" +
-                "//span[@class='link__inner']")).getText(), region);
+        Assert.assertEquals(driver.findElement(regionButton).getText(), region);
 
         //compare region and delivery region
-        Assert.assertTrue(driver.findElement(By.xpath("//div[@class='layout layout_type_maya']//span" +
-                "[@class='link__inner']")).getText().equals(driver.findElement(By.xpath("//div[@class=" +
-                "'settings-list__title']//span[@class='link__inner']")).getText()));
+        Assert.assertTrue(driver.findElement(regionButton).getText().equals(driver.findElement
+                (By.xpath("//div[@class='settings-list__title']//span[@class='link__inner']")).getText()));
     }
 }

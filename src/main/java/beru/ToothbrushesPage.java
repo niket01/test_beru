@@ -11,7 +11,7 @@ public class ToothbrushesPage {
         this.driver = driver;
     }
 
-    @Step
+    @Step("Click on electric toothbrushes button")
     public void clickElecticToothbrushesButton(){
         driver.findElement(By.linkText("Электрические зубные щетки")).click();
     }

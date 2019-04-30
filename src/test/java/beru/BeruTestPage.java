@@ -25,6 +25,7 @@ public class BeruTestPage extends DriverClass {
         login.clickLoginButton();
 
         //check login
+        home.checkVisibilityLogin();
         home.checkMyProfile();
     }
 

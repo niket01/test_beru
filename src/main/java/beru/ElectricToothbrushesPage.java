@@ -13,20 +13,20 @@ import java.util.List;
 
 public class ElectricToothbrushesPage {
     private WebDriver driver;
+    private WebDriverWait wait = new WebDriverWait(DriverClass.getDriver(), 15);
 
     public ElectricToothbrushesPage(WebDriver driver){
         this.driver = driver;
     }
 
-    @Step
+    @Step("Enter price range")
     public void enterPriceRange(){
         driver.findElement(By.xpath("//input[@name='Цена от']")).sendKeys("999");
         driver.findElement(By.xpath("//input[@name='Цена до']")).sendKeys("1999");
-        (new WebDriverWait(driver, 15)).until(ExpectedConditions.visibilityOfElementLocated(
-                (By.cssSelector("div.NZiH_Kn8Fj"))));
+        wait.until(ExpectedConditions.visibilityOfElementLocated((By.cssSelector("div.NZiH_Kn8Fj"))));
     }
 
-    @Step
+    @Step("Open all items")
     public void openAllToothbrushes(){
         WebElement showMoreButton = driver.findElement(By.xpath("//div[@class='n-pager-more__button " +
                 "pager-loader_preload']"));
@@ -34,41 +34,34 @@ public class ElectricToothbrushesPage {
         while(showMoreButton.isDisplayed()){
             showMoreButton.click();
             //wait while all prices will be load
-            (new WebDriverWait(driver, 15)).until(ExpectedConditions.
-                    visibilityOfAllElementsLocatedBy(By.cssSelector("div.grid-snippet.grid-snippet_react.b-zone." +
-                            "b-spy-visible")));
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector
+                    ("div.grid-snippet.grid-snippet_react.b-zone.b-spy-visible")));
         }
     }
 
-    @Step
+    @Step("Check price range")
     public void checkPriceRange() {
-        /*List<WebElement> price_list = driver.findElements(By.xpath("//div[@class='search-result-snippet']" +
-                "//span[starts-with(@class, '_1u3j_pk1db _1pTV0mQZJz')]/span[1]"));*/
-
         List<WebElement> toothbrushList = driver.findElements(By.cssSelector("div.grid-snippet.grid-snippet_react." +
                 "b-zone.b-spy-visible.i-bem.b-spy-visible_js_inited"));
 
         for(int i = 0; i < toothbrushList.size(); i++) {
             JSONObject obj = new JSONObject(toothbrushList.get(i).getAttribute("data-bem"));
             int price = obj.getJSONObject("grid-snippet").getInt("price");
-            /*int price = Integer.parseInt(price_list.get(i).getText().replaceAll("\\D",""));*/
             Assert.assertTrue(price >= 999 && price <= 1999);
         }
     }
 
-    @Step
+    @Step("Add toothbrush")
     public void addToothbrush(){
         List<WebElement> cartButtonList = driver.findElements(By.cssSelector("button._4qhIn2-ESi._3OWdR9kZRH." +
                 "THqSbzx07u"));
         cartButtonList.get(cartButtonList.size() - 2).click();
     }
 
-    @Step
+    @Step("Click on cart button")
     public void clickCartButton(){
-        (new WebDriverWait(driver, 15)).until(ExpectedConditions.
-                visibilityOfAllElementsLocatedBy(By.linkText("Перейти в корзину")));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.linkText("Перейти в корзину")));
         driver.findElement(By.linkText("Перейти в корзину")).click();
-        (new WebDriverWait(driver, 15)).until(ExpectedConditions.
-                visibilityOfAllElementsLocatedBy(By.cssSelector("div._3AlSA6AOKL")));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div._3AlSA6AOKL")));
     }
 }

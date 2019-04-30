@@ -10,30 +10,37 @@ import org.testng.Assert;
 
 public class CartPage {
     private WebDriver driver;
+    private WebDriverWait wait = new WebDriverWait(DriverClass.getDriver(), 15);
+
+    private By totalPriceText = By.cssSelector("span._1oBlNqVHPq");
+    private By totalItemText = By.xpath("//div[contains(@data-auto, 'total-items')]//span[2]");
+    private By deliveryText = By.cssSelector("span._3EX9adn_xp");
+    private By cartInformation = By.cssSelector("div._1n63a5bOO8");
 
     public CartPage(WebDriver driver){
         this.driver = driver;
     }
 
-    @Step
+    @Step("Check free delivery")
     public void checkDelivery(){
-        WebElement delivery = driver.findElement(By.cssSelector("span._3EX9adn_xp"));
+        WebElement delivery = driver.findElement(deliveryText);
         Assert.assertTrue(delivery.getText().contains("До бесплатной доставки"));
     }
 
-    @Step
+    @Step("Check total price")
     public int checkTotalPrice(){
-        int totalPrice = Integer.parseInt(driver.findElement(By.cssSelector("span._1oBlNqVHPq")).getText().
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(cartInformation));
+        int totalPrice = Integer.parseInt(driver.findElement(totalPriceText).getText().
                 replaceAll("\\D",""));
-        int totalItem = Integer.parseInt(driver.findElement(By.xpath("//div[contains(@data-auto, " +
-                "'total-items')]//span[2]")).getText().replaceAll("\\D",""));
+        int totalItem = Integer.parseInt
+                (driver.findElement(totalItemText).getText().replaceAll("\\D",""));
         int totalDelivery = Integer.parseInt(driver.findElement(By.xpath("//div[contains(@data-auto, " +
                 "'total-delivery')]//span[2]")).getText().replaceAll("\\D",""));
         Assert.assertEquals(totalItem + totalDelivery, totalPrice);
         return totalItem;
     }
 
-    @Step
+    @Step("Add items in cart")
     public void addItemsForFreeDelivery(int totalItem){
         int freeDelivery = totalItem;
         while(freeDelivery <= 2999){
@@ -42,21 +49,20 @@ public class CartPage {
         }
     }
 
-    @Step
+    @Step("Check free delivery")
     public void checkFreeDelivery(){
-        (new WebDriverWait(driver, 15)).until(ExpectedConditions.
-                visibilityOfAllElementsLocatedBy(By.xpath("//span[text()='бесплатно']")));
-
-        WebElement delivery = driver.findElement(By.cssSelector("span._3EX9adn_xp"));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//span[text()='бесплатно']")));
+        WebElement delivery = driver.findElement(deliveryText);
         Assert.assertTrue(delivery.getText().contains("бесплатную доставку"));
     }
 
-    @Step
+    @Step("Check total price with free delivery")
     public void checkTotalPriceWithFreeDelivery(){
-        int totalPrice = Integer.parseInt(driver.findElement(By.cssSelector("span._1oBlNqVHPq")).getText().
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(cartInformation));
+        int totalPrice = Integer.parseInt(driver.findElement(totalPriceText).getText().
                 replaceAll("\\D",""));
-        int totalItem = Integer.parseInt(driver.findElement(By.xpath("//div[contains(@data-auto, " +
-                "'total-items')]//span[2]")).getText().replaceAll("\\D",""));
+        int totalItem = Integer.parseInt
+                (driver.findElement(totalItemText).getText().replaceAll("\\D",""));
         Assert.assertEquals(totalItem, totalPrice);
     }
 }
