@@ -28,6 +28,10 @@ public class DriverClass {
 
     @AfterMethod
     public void tearDown(){
+        HomePage home = new HomePage(driver);
+        if(home.checkLogin()){
+            home.logout();
+        }
         driver.close();
     }
 }

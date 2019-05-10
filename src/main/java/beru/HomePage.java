@@ -11,6 +11,7 @@ import org.testng.Assert;
 public class HomePage {
     private WebDriver driver;
     private WebDriverWait wait = new WebDriverWait(DriverClass.getDriver(), 15);
+    Actions actions = new Actions(DriverClass.getDriver());
 
     private By profileButton = By.cssSelector("span.header2-nav-item__icon.header2-nav-item__icon_type_profile");
     private By regionList = By.cssSelector("div.region-suggest__list-item");
@@ -18,6 +19,7 @@ public class HomePage {
    public HomePage(WebDriver driver){
        this.driver = driver;
    }
+
     @Step("Click loginButton on HomePage")
     public void clickLoginButton(){
         driver.findElement(By.xpath("//span[@title='Войти в аккаунт']")).click();
@@ -25,7 +27,6 @@ public class HomePage {
 
     @Step("Check visibility of login")
     public void checkVisibilityLogin(){
-        Actions actions = new Actions(driver);
         actions.moveToElement(driver.findElement(profileButton)).build().perform();
         Assert.assertEquals(driver.findElement(By.className("header2-user-menu__email")).getText(),
                 "nikita.yadchuk@yandex.ru");
@@ -34,6 +35,15 @@ public class HomePage {
     @Step("Check button MyProfile")
     public void checkMyProfile(){
         Assert.assertEquals(driver.findElement(profileButton).getAttribute("title"),"Мой профиль");
+    }
+
+    @Step("Check login")
+    public boolean checkLogin(){
+       String loginText = driver.findElement(profileButton).getAttribute("title");
+       if(loginText.equals("Мой профиль"))
+           return true;
+       else
+           return false;
     }
 
     @Step("Click on region button")
@@ -67,7 +77,6 @@ public class HomePage {
 
     @Step("Click settings")
     public void clickSettingsButton(){
-        Actions actions = new Actions(driver);
         actions.moveToElement(driver.findElement(By.cssSelector("span.header2-nav-item__icon." +
                 "header2-nav-item__icon_type_profile"))).build().perform();
         driver.findElement(By.cssSelector("li.header2-user-menu__item.header2-user-menu__item_type_settings")).click();
@@ -80,8 +89,13 @@ public class HomePage {
 
     @Step("Click toothbrush in catalog")
     public void clickToothbrushInCatalog(){
-        Actions actions = new Actions(driver);
         actions.moveToElement(driver.findElement(By.linkText("Бытовая техника"))).build().perform();
         driver.findElement(By.linkText("Зубные щетки и ирригаторы")).click();
+    }
+
+    @Step("Logout")
+    public void logout(){
+        actions.moveToElement(driver.findElement(profileButton)).build().perform();
+        driver.findElement(By.cssSelector("li.header2-user-menu__item.header2-user-menu__item_type_logout")).click();
     }
 }
